@@ -1,8 +1,8 @@
 section.amazing{
     background-image:url(./img/backgr_amaz.jpg);
-    background-size: 100% auto;
+    background-size:cover;
     /* height: 600px; */
-    /* background-repeat:space; */
+    background-repeat:no-repeat;
     padding: 80px 40px 0 40px;
 }
 .amazing > h1{
@@ -14,6 +14,7 @@ font-weight: 700;
 line-height: 110%; /* 105.6px */
 width: 100%;
 text-transform: uppercase;
+width: auto;
 }
 .amazing > button{
     padding: 16px 56px;
@@ -26,4 +27,17 @@ text-transform: uppercase;
     font-style: normal;
     font-weight: 600;
     line-height: 130%; /* 26px */
+}
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+    section.amazing{
+        /* height: 476px; */
+        padding: 60px 20px 0 20px;
+    }
+    .amazing > h1{
+        font-size: 90px;
+        align-self: stretch;
+    }
+    .amazing > button{
+        margin-bottom: 120px;
+            }
 }
