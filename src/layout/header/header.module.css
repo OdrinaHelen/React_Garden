@@ -19,8 +19,41 @@ header a {
     line-height: 130%; /* 26px */
 }
 
+.menu_holder {
+    display: none;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1000px) {
     header {
         padding: 30px 20px ;
     }
 }
+
+@media only screen and (min-width: 480px) and (max-width: 768px){
+    header {
+        padding: 20px ;
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 480px){
+    .links{
+         display: none;
+    }
+    .menu_holder {
+        display:contents;
+    }
+    .icon_menu{
+        display: flex;
+        gap: 20px;
+    }
+    .menu_holder:active > .links{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            /* opacity: 1; */
+            background-color: white;
+            color: black;
+            padding: 10px 20px;
+       }
+    }
+

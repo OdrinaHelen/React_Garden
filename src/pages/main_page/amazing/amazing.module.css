@@ -41,3 +41,31 @@ width: auto;
         margin-bottom: 120px;
             }
 }
+@media only screen and (min-width: 480px) and (max-width: 768px){
+    section.amazing{
+          padding: 60px 20px 0 20px;
+    }
+    .amazing > h1{
+        font-size: 68px;
+        align-self: stretch;
+    }
+    .amazing > button{
+        margin-bottom: 326px;
+            }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 480px){
+    section.amazing{
+        padding: 50px 20px 0 20px;
+  }
+  .amazing > h1{
+      font-size: 60px;
+      align-self: stretch;
+  }
+  .amazing > button{
+      margin-bottom: 215px;
+      padding: 12px 52px;
+      font-size: 18px;
+          }
+
+}

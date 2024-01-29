@@ -1,18 +1,32 @@
 import styles from './header.module.css'
 import logo from './img/logo.svg'
 import icon from './img/icon.svg'
+import menu from './img/menu.svg'
 
 export const Header = () => {
     return (
         <header>
             <img src={logo} alt="logo" />
-                <nav>
+                <nav  className={styles.links}>
                 <a href="#">Main Page</a>
                 <a href="#">Categories</a>
                 <a href="#">All products</a>
                 <a href="#">All sales</a>
                 </nav>
+                <div className={styles.icon_menu}>
             <img src={icon} alt="icon" />
+
+            <span className={styles.menu_holder}>
+            <img src={menu} alt="menu" />
+            <nav  className={styles.links}>
+                <a href="#">Main Page</a>
+                <a href="#">Categories</a>
+                <a href="#">All products</a>
+                <a href="#">All sales</a>
+                </nav>
+            </span>
+            </div>
+
 
           
 
