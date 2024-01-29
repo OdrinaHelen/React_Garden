@@ -57,3 +57,25 @@ header a {
        }
     }
 
+    @media only screen and (max-width: 360px){
+        .links{
+             display: none;
+        }
+        .menu_holder {
+            display:contents;
+        }
+        .icon_menu{
+            display: flex;
+            gap: 20px;
+        }
+        .menu_holder:active > .links{
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                /* opacity: 1; */
+                background-color: white;
+                color: black;
+                padding: 10px 20px;
+           }
+        }
+

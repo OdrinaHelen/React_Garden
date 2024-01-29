@@ -218,3 +218,69 @@ order: 2;
     margin: 4px 0 0 0;
     }
 }
+
+
+@media only screen and (max-width: 360px){
+    section.discount{
+        margin: 56px 20px 0 20px ;
+      
+            padding: 24px 20px 0 20px;
+            border-radius: var(--radius-big, 12px);
+        background: linear-gradient(261deg, #0B710B 32.63%, #393 98.96%);
+        /* display: flex;
+        flex-direction: column; */
+
+width: 320px;
+height: auto;
+align-items: center;
+gap: 24px;
+        }
+    
+    .discount>p{
+        padding: 24px 0 24px 0;
+        font-size: 40px;
+   
+        }
+        
+    .discount img{    
+        width: 454px;
+        height: 232px;
+        left: -88px;
+        
+        bottom: 0px;
+
+order: 2;   
+
+
+
+    
+    }
+    .discount form{
+        order: 1;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        /* justify-content:right; */
+        gap: 20px;
+        margin: 0;
+    }
+    .input{
+        justify-content: right;
+        flex-direction:column;
+        margin-right: 20px;
+        margin-bottom: 32px;
+    }
+    .discount input{
+        padding: 12px 20px;
+        width: 280px;
+       }
+    .discount [type=button]{
+        /* width: 450px; */
+        width: 280px;
+        padding: 12px 20px;
+        
+    
+    margin: 4px 0 0 0;
+    }
+}
